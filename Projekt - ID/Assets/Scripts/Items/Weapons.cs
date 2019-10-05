@@ -9,6 +9,9 @@ public class Weapons
     public bool isRanged;
     public string damageType;
     public bool isEquiped;
+    public Animation animAttack1;
+    public Animation animAttack2;
+    public Animation animAttack3;
 
     public void GenWeapon()
     {
