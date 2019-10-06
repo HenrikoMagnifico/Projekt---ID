@@ -5,6 +5,7 @@ using UnityEngine;
 public class Knife : MonoBehaviour
 {
     public Melee melee = new Melee();
+    public Dialouge dia;
     public GameObject player;
 
     private void Start()
@@ -18,6 +19,7 @@ public class Knife : MonoBehaviour
         melee.weapon.isEquiped = true;
         melee.range = 5;
         melee.weapon.item.icon = GetComponent<Texture2D>();
+        dia = new Dialouge("Knife");
     }
 
     private void Update()
