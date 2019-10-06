@@ -12,7 +12,8 @@ public class Player : MonoBehaviour
     List<int> reputation;
     public float speed;
     public List<GameObject> inventory;
-    Vector2 movement;
+    public float standard_speed;
+    Vector2 velocity;
     Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -35,6 +36,20 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PlayerMovement();
+    }
+
+    void PlayerMovement()
+    {
+        velocity = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * speed, Input.GetAxis("Vertical") * Time.deltaTime * speed);
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = standard_speed * 2;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = standard_speed;
+        }
+        rb.velocity = velocity;
     }
 }

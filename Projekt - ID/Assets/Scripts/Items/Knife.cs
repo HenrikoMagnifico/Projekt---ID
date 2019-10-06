@@ -19,14 +19,13 @@ public class Knife : MonoBehaviour
         melee.weapon.isEquiped = true;
         melee.range = 5;
         melee.weapon.item.icon = GetComponent<Texture2D>();
-        dia = new Dialouge("Knife");
     }
 
     private void Update()
     {
         if(melee.weapon.isEquiped == true)
         {
-            this.transform.position = player.transform.position;
+            this.transform.position = new Vector3(player.transform.position.x + 0.09f, player.transform.position.y - 0.02f, player.transform.position.z - 1);
         }
     }
 }

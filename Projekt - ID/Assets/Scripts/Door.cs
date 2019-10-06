@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     public GameObject player;
     Rigidbody2D rb;
     Vector2 pos;
+    Dialouge dia;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class Door : MonoBehaviour
                 {
                     rb.freezeRotation = false;
                     rb.AddForce(new Vector2(0,-1));
+                    dia = new Dialouge("Door open");
                     Rotated = true;
                 }
                 /*if (Rotated == true)

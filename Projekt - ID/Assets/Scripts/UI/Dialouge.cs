@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
 
-public class Dialouge : MonoBehaviour
+public class Dialouge
 {
     public Text textObj;
     public bool createNew;
