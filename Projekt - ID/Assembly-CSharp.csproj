@@ -72,8 +72,10 @@
     <Compile Include="Assets\Scripts\Items\Melee.cs" />
     <Compile Include="Assets\Scripts\Items\Weapons.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ReadText.cs" />
     <Compile Include="Assets\Scripts\UI\Button.cs" />
     <Compile Include="Assets\Scripts\UI\Dialouge.cs" />
+    <None Include="Assets\Texts\test.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/dev/Unity/Projekt---ID/Projekt - ID/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

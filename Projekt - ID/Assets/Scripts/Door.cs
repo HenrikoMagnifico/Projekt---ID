@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     Rigidbody2D rb;
     Vector2 pos;
     Dialouge dia;
+    ReadText read;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class Door : MonoBehaviour
                     rb.freezeRotation = false;
                     rb.AddForce(new Vector2(0,-1));
                     dia = new Dialouge("Door open");
+                    read = new ReadText("knife");
                     Rotated = true;
                 }
                 /*if (Rotated == true)
